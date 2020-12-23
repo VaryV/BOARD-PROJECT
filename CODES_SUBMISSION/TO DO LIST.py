@@ -23,11 +23,11 @@ def homepage():
     )  # SETTING THE TITLE OF THE WINDOW TO THE NAME OF THE APPLICATION
     p_win.state("zoomed")  # MAKING THE WINDOW GET DISPLAYED IN A MAXIMISED STATE
     p_win.iconbitmap(
-        "BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//icon.ico"
+        "IMAGES_SUBMISSION//icon.ico"
     )  # SETTING ICON OF THE APP WINDOW
 
     bg_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//scenery.png"
+        file="IMAGES_SUBMISSION//scenery.png"
     )  # INITIALISING IMAGE
     bg_label = tk.Label(p_win, image=bg_img)  # LABEL WITH THE BACKGROUND IMAGE
     bg_label.place(x=0, y=0)  # PLACING THE LABEL
@@ -35,10 +35,10 @@ def homepage():
     global hide_img
     global show_img
     hide_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//hide_pwd.png"
+        file="IMAGES_SUBMISSION//hide_pwd.png"
     )  # INITIALISING IMAGE
     show_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//show_pwd.png"
+        file="IMAGES_SUBMISSION//show_pwd.png"
     )  # INITIALISING IMAGE
 
     # DEFINING SIGNIN AND LOGIN FUNCTIONS AND CHANGE PASSWORD FUNCTION #
@@ -221,16 +221,16 @@ def homepage():
         )
 
         # PLACING ALL THE SIGN UP WIDGETS #
-        signup.place(x=683 - 30, y=786 - 650)
-        usn.place(x=683 - 180, y=786 - 550)
-        pwd.place(x=683 - 180, y=786 - 405)
-        mail.place(x=683 - 180, y=786 - 475)
-        e_usn.place(x=683 + 18, y=786 - 545)
-        e_pwd.place(x=683 + 18, y=786 - 400)
-        pwd_btn.place(x=683 + 269, y=786 - 400)
-        e_mail.place(x=683 + 18, y=786 - 470)
-        confirm_btn.place(x=683 - 95, y=786 - 325)
-        back_btn.place(x=683 + 85, y=786 - 325)
+        signup.place(x=653, y=136)
+        usn.place(x=503, y=236)
+        pwd.place(x=503, y=381)
+        mail.place(x=503, y=311)
+        e_usn.place(x=701, y=241)
+        e_pwd.place(x=701, y=386)
+        pwd_btn.place(x=952, y=386)
+        e_mail.place(x=701, y=316)
+        confirm_btn.place(x=588, y=461)
+        back_btn.place(x=768, y=461)
 
     # LOGIN FUNCTION #
     def login():
@@ -374,14 +374,14 @@ def homepage():
         )
 
         # PLACING ALL THE LOGIN WIDGETS #
-        login.place(x=683 - 30, y=786 - 650)
-        usn.place(x=683 - 180, y=786 - 550)
-        pwd.place(x=683 - 180, y=786 - 475)
-        e_usn.place(x=683 + 18, y=786 - 545)
-        e_pwd.place(x=683 + 18, y=786 - 470)
-        pwd_btn.place(x=683 + 269, y=786 - 470)
-        confirm_btn.place(x=683 + 10, y=786 - 400)
-        back_btn.place(x=683 + 10, y=786 - 325)
+        login.place(x=653, y=136)
+        usn.place(x=503, y=236)
+        pwd.place(x=503, y=311)
+        e_usn.place(x=701, y=241)
+        e_pwd.place(x=701, y=316)
+        pwd_btn.place(x=952, y=316)
+        confirm_btn.place(x=693, y=386)
+        back_btn.place(x=693, y=461)
 
     # CHANGE PASSWORD FUNCTION #
     def pwdcng():
@@ -563,16 +563,16 @@ def homepage():
         )
 
         # PLACING ALL THE WIDGETS IN CHANGE PASSWORD #
-        pwdcng_label.place(x=683 - 150, y=786 - 650)
-        usn.place(x=683 - 235, y=786 - 550)
-        e_usn.place(x=683 + 83, y=786 - 545)
-        c_pwd.place(x=683 - 235, y=786 - 475)
-        e_pwd.place(x=683 + 83, y=786 - 470)
-        n_pwd.place(x=683 - 235, y=786 - 400)
-        e_npwd.place(x=683 + 83, y=786 - 395)
-        pwd_btn.place(x=683 + 335, y=786 - 395)
-        confirm_btn.place(x=683 - 95, y=786 - 325)
-        back_btn.place(x=683 + 85, y=786 - 325)
+        pwdcng_label.place(x=533, y=136)
+        usn.place(x=448, y=236)
+        e_usn.place(x=766, y=241)
+        c_pwd.place(x=448, y=311)
+        e_pwd.place(x=766, y=316)
+        n_pwd.place(x=448, y=386)
+        e_npwd.place(x=766, y=391)
+        pwd_btn.place(x=1018, y=391)
+        confirm_btn.place(x=588, y=461)
+        back_btn.place(x=768, y=461)
 
     # DISPLAYING HOME SCREEN #
 
@@ -629,11 +629,11 @@ def homepage():
     )
 
     # PLACING ALL WIDGETS IN HOME SCREEN #
-    title_label.place(x=683 - 470, y=786 - 780)
-    signup_btn.place(x=683 - 180, y=786 - 248)
-    login_btn.place(x=683 + 80, y=786 - 248)
-    pwdcng_btn.place(x=683 - 50, y=786 - 160)
-    exit_btn.place(x=683 - 50, y=786 - 70)
+    title_label.place(x=213, y=6)
+    signup_btn.place(x=503, y=538)
+    login_btn.place(x=763, y=538)
+    pwdcng_btn.place(x=633, y=626)
+    exit_btn.place(x=633, y=716)
 
     p_win.mainloop()  # FOR THE WINDOW TO RUN TILL EXIT BUTTON OR THE RED CROSS IN THE TOP RIGHT IS CLICKED
 
@@ -647,11 +647,11 @@ def new_window(text):
         "Logged Into To Do List!!"
     )  # SETTING THE TITLE OF THE WINDOW TO THE NAME OF THE APPLICATION
     n_win.iconbitmap(
-        "BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//icon.ico"
+        "IMAGES_SUBMISSION//icon.ico"
     )  # SETTING ICON OF THE APP WINDOW
 
     n_win_bg_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//scenery2.png"
+        file="IMAGES_SUBMISSION//scenery2.png"
     )  # BACKGROUND IMAGE FOR THE NEW WINDOW
     # LABEL THAT CONTAINS THE BACKGROUND IMAGE AND THE WELCOME MESSAGE
     n_win_bg_img_label = tk.Label(
@@ -685,8 +685,8 @@ def new_window(text):
 
         e_rem_name.focus()
 
-        rem_name_label.place(x=786 - 400, y=225)
-        e_rem_name.place(x=796 - 90, y=225)
+        rem_name_label.place(x=386, y=225)
+        e_rem_name.place(x=706, y=225)
 
         c_datentime = dt.datetime.now()
         c_date = c_datentime.date()
@@ -705,17 +705,17 @@ def new_window(text):
             pady=10,
             fill="BOTH",
         )
-        cal.place(x=768 - 310, y=275)
+        cal.place(x=458, y=275)
 
         reminder_option_label = tk.Label(
             n_win, text="REMIND ME? : ", font=("Fugaz One", 18), fg="white", bg="black"
         )
-        reminder_option_label.place(x=830 - 100, y=275)
+        reminder_option_label.place(x=730, y=275)
         rem_option = tk.StringVar()
         yes_rem_rb = tk.Radiobutton(n_win, text="YES", variable=rem_option, value="Y")
         no_rem_rb = tk.Radiobutton(n_win, text="NO", variable=rem_option, value="N")
-        yes_rem_rb.place(x=1030 - 100, y=280)
-        no_rem_rb.place(x=1030 - 100, y=315)
+        yes_rem_rb.place(x=930, y=280)
+        no_rem_rb.place(x=930, y=315)
         no_rem_rb.select()  # TO HAVE 'No' SELECTED BY DEFAULT
 
         frequency_label = tk.Label(
@@ -725,14 +725,14 @@ def new_window(text):
             bg="black",
             font=("Fugaz One", 18),
         )
-        frequency_label.place(x=830 - 100, y=380)
+        frequency_label.place(x=730, y=380)
         rec_options = ["ONCE", "DAILY", "WEEKLY", "MONTHLY"]
         recurring_freq_var = tk.StringVar()
         recurring_freq_var.set(
             rec_options[0]
         )  # TO SET 'ONCE' AS THE FREQUENCY BY DEFAULT
         rec_or_not_dropdown = tk.OptionMenu(n_win, recurring_freq_var, *rec_options)
-        rec_or_not_dropdown.place(x=768 - 110 + 150 + 150 + 100 + 30, y=385)
+        rec_or_not_dropdown.place(x=1088, y=385)
 
         hour_label = tk.Label(
             n_win, text="HOUR : ", font=("Fugaz One", 18), fg="white", bg="black"
@@ -810,7 +810,7 @@ def new_window(text):
             fg="white",
             bg="black",
         )
-        rem_desc_label.place(x=786 - 400, y=550)
+        rem_desc_label.place(x=386, y=550)
         rem_desc_text = tk.Text(n_win, font=("Fugaz One", 18), height=5, width=30)
         rem_desc_text.place(x=706, y=550)
 
@@ -982,7 +982,7 @@ def new_window(text):
             fg="white",
             bg="black",
         )
-        events_label.place(x=35 + 30 + 100, y=225)  # x=615, y=275
+        events_label.place(x=165, y=225)  # x=615, y=275
         style = ttk.Style()
         style.theme_use("clam")
         style.configure("Treeview", rowheight=25)
@@ -1075,7 +1075,7 @@ def new_window(text):
                 )
             c += 1
 
-        listbox_scrollbar_frame.place(x=20 - 10, y=275)  # x=395, y=325
+        listbox_scrollbar_frame.place(x=10, y=275)  # x=395, y=325
 
         # FUNCTION OF BACK BUTTON INSIDE DELETE TASK #
         def back_et_fn():
@@ -1112,9 +1112,9 @@ def new_window(text):
                 e_rem_name.focus()
 
                 rem_name_label.place(
-                    x=786 - 400 + 100 + 100 + 100 + 20 + 10 + 10, y=225
+                    x=726, y=225
                 )
-                e_rem_name.place(x=796 - 90 + 100 + 100 + 100 + 20 + 10 + 10, y=225)
+                e_rem_name.place(x=1046, y=225)
 
                 cal = tkc.Calendar(
                     n_win,
@@ -1125,7 +1125,7 @@ def new_window(text):
                     pady=10,
                     fill="BOTH",
                 )
-                cal.place(x=768 - 210 + 100 + 100 + 20 + 10 + 10, y=275)
+                cal.place(x=798, y=275)
 
                 reminder_option_label = tk.Label(
                     n_win,
@@ -1134,7 +1134,7 @@ def new_window(text):
                     fg="white",
                     bg="black",
                 )
-                reminder_option_label.place(x=830 + 100 + 100 + 20 + 10 + 10, y=275)
+                reminder_option_label.place(x=1070, y=275)
                 rem_option = tk.StringVar()
                 yes_rem_rb = tk.Radiobutton(
                     n_win, text="YES", variable=rem_option, value="Y"
@@ -1142,8 +1142,8 @@ def new_window(text):
                 no_rem_rb = tk.Radiobutton(
                     n_win, text="NO", variable=rem_option, value="N"
                 )
-                yes_rem_rb.place(x=1030 + 100 + 100 + 20 + 10 + 10, y=280)
-                no_rem_rb.place(x=1030 + 100 + 100 + 20 + 10 + 10, y=315)
+                yes_rem_rb.place(x=1270, y=280)
+                no_rem_rb.place(x=1270, y=315)
                 if tasks_dt_listbox[int(et)][5] == "Y":
                     yes_rem_rb.select()
                 elif tasks_dt_listbox[int(et)][5] == "N":
@@ -1156,7 +1156,7 @@ def new_window(text):
                     bg="black",
                     font=("Fugaz One", 18),
                 )
-                frequency_label.place(x=830 + 100 + 100 + 20 + 10 + 10, y=380)
+                frequency_label.place(x=1070, y=380)
                 rec_options = ["ONCE", "DAILY", "WEEKLY", "MONTHLY"]
                 recurring_freq_var = tk.StringVar()
                 if tasks_dt_listbox[int(et)][4] == "ONCE":
@@ -1172,7 +1172,7 @@ def new_window(text):
                     n_win, recurring_freq_var, *rec_options
                 )
                 rec_or_not_dropdown.place(
-                    x=768 - 10 + 150 + 150 + 100 + 30 + 100 + 100 + 20 + 10 + 10, y=385
+                    x=1428, y=385
                 )
 
                 hour_label = tk.Label(
@@ -1182,7 +1182,7 @@ def new_window(text):
                     fg="white",
                     bg="black",
                 )
-                hour_label.place(x=400 + 100 + 100 + 100 + 20 + 10 + 10, y=500)
+                hour_label.place(x=740, y=500)
                 hours = []
                 for i in range(0, 12):
                     if i < 10:
@@ -1219,7 +1219,7 @@ def new_window(text):
                         hour_var.set("0" + str(tasks_dt_listbox[int(et)][3])[0:1])
                         amorpm = "a.m"
                 hour_dropdown = tk.OptionMenu(n_win, hour_var, *hours)
-                hour_dropdown.place(x=500 + 100 + 100 + 100 + 20 + 10 + 10, y=505)
+                hour_dropdown.place(x=840, y=505)
 
                 minute_label = tk.Label(
                     n_win,
@@ -1228,7 +1228,7 @@ def new_window(text):
                     fg="white",
                     bg="black",
                 )
-                minute_label.place(x=690 + 100 + 100 + 100 + 20 + 10 + 10, y=500)
+                minute_label.place(x=1030, y=500)
                 minutes = []
                 for i in range(0, 60):
                     if i < 10:
@@ -1244,7 +1244,7 @@ def new_window(text):
                 elif len(str(tasks_dt_listbox[int(et)][3])) == 7:
                     minute_var.set(str(tasks_dt_listbox[int(et)][3])[2:4])
                 minute_dropdown = tk.OptionMenu(n_win, minute_var, *minutes)
-                minute_dropdown.place(x=820 + 100 + 100 + 100 + 20 + 10 + 10, y=505)
+                minute_dropdown.place(x=1160, y=505)
 
                 am_pm_label = tk.Label(
                     n_win,
@@ -1253,7 +1253,7 @@ def new_window(text):
                     fg="white",
                     bg="black",
                 )
-                am_pm_label.place(x=980 + 100 + 100 + 100 + 20 + 10 + 10, y=500)
+                am_pm_label.place(x=1320, y=500)
 
                 am_pm_list = ["a.m", "p.m"]
                 am_pm_var = tk.StringVar()
@@ -1262,7 +1262,7 @@ def new_window(text):
                 elif amorpm == "p.m":
                     am_pm_var.set(am_pm_list[1])
                 am_pm_dropdown = tk.OptionMenu(n_win, am_pm_var, *am_pm_list)
-                am_pm_dropdown.place(x=1130 + 100 + 100 + 100 + 20 + 10 + 10, y=505)
+                am_pm_dropdown.place(x=1470, y=505)
 
                 rem_desc_label = tk.Label(
                     n_win,
@@ -1272,14 +1272,14 @@ def new_window(text):
                     bg="black",
                 )
                 rem_desc_label.place(
-                    x=786 - 400 + 100 + 100 + 100 + 20 + 10 + 10, y=550
+                    x=726, y=550
                 )
                 rem_desc_text = tk.Text(
                     n_win, font=("Fugaz One", 18), height=5, width=30
                 )
                 # reminder_description = tasks_dt_listbox[int(et)][6]
                 rem_desc_text.insert(1.0, str(tasks_dt_listbox[int(et)][6]))
-                rem_desc_text.place(x=706 + 100 + 100 + 100 + 20 + 10 + 10, y=550)
+                rem_desc_text.place(x=1046, y=550)
 
                 # FUNCTION OF BACK BUTTON INSIDE ADD TASK #
                 def back_at_fn():
@@ -1420,7 +1420,7 @@ def new_window(text):
                     fg="green",
                     command=update_btn_fn,
                 )
-                add_btn.place(x=635 + 100 + 100 + 100 + 20 + 10 + 10, y=735)
+                add_btn.place(x=975, y=735)
                 back_at_btn = tk.Button(
                     n_win,
                     text="  BACK ",
@@ -1429,7 +1429,7 @@ def new_window(text):
                     fg="red",
                     command=back_at_fn,
                 )
-                back_at_btn.place(x=770 + 100 + 100 + 100 + 20 + 10 + 10, y=735)
+                back_at_btn.place(x=1110, y=735)
 
             # IF THERE ARE CURRENTLY NO TASKS PRESENT IN THE USER'S ACCOUNT
             else:
@@ -1449,7 +1449,7 @@ def new_window(text):
             fg="red",
             command=edit_btn_fn,
         )
-        edit_btn.place(x=110 + 100, y=735)
+        edit_btn.place(x=210, y=735)
 
         back_et_btn = tk.Button(
             n_win,
@@ -1459,7 +1459,7 @@ def new_window(text):
             fg="white",
             command=back_et_fn,
         )
-        back_et_btn.place(x=220 + 100, y=735)
+        back_et_btn.place(x=320, y=735)
 
     # FUNCTION TO DELETE TASK #
     def delete_task():
@@ -1766,31 +1766,31 @@ def new_window(text):
 
     # SETTING UP ADD TASK, EDIT TASK, DELETE TASK, VIEW TASKS WIDGETS, BUTTONS, IMAGES, LABELS, ETC.
     add_task_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//add_task.png"
+        file="IMAGES_SUBMISSION//add_task.png"
     )
     add_task_btn = tk.Button(n_win, image=add_task_img, command=add_task)
     add_task_label = tk.Label(n_win, text="ADD TASK")
 
     edit_task_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//edit_task.png"
+        file="IMAGES_SUBMISSION//edit_task.png"
     )
     edit_task_btn = tk.Button(n_win, image=edit_task_img, command=edit_task)
     edit_task_label = tk.Label(n_win, text="EDIT TASK")
 
     delete_task_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//delete_task.png"
+        file="IMAGES_SUBMISSION//delete_task.png"
     )
     delete_task_btn = tk.Button(n_win, image=delete_task_img, command=delete_task)
     delete_task_label = tk.Label(n_win, text="DELETE TASK")
 
     view_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//view_task.png"
+        file="IMAGES_SUBMISSION//view_task.png"
     )
     view_task_btn = tk.Button(n_win, image=view_img, command=view_task)
     view_task_label = tk.Label(n_win, text="VIEW TASKS")
 
     back_img = tk.PhotoImage(
-        file="BOARD PROJECT SUBMISSION//IMAGES_SUBMISSION//back.png"
+        file="IMAGES_SUBMISSION//back.png"
     )
     back_btn = tk.Button(n_win, image=back_img, command=n_win.destroy)
 
