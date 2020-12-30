@@ -23,11 +23,11 @@ def homepage():
     )  # SETTING THE TITLE OF THE WINDOW TO THE NAME OF THE APPLICATION
     p_win.state("zoomed")  # MAKING THE WINDOW GET DISPLAYED IN A MAXIMISED STATE
     p_win.iconbitmap(
-        "IMAGES_SUBMISSION//icon.ico"
+        "IMAGES_SUBMISSION\\icon.ico"
     )  # SETTING ICON OF THE APP WINDOW
 
     bg_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//scenery.png"
+        file="IMAGES_SUBMISSION\\scenery.png"
     )  # INITIALISING IMAGE
     bg_label = tk.Label(p_win, image=bg_img)  # LABEL WITH THE BACKGROUND IMAGE
     bg_label.place(x=0, y=0)  # PLACING THE LABEL
@@ -35,10 +35,10 @@ def homepage():
     global hide_img
     global show_img
     hide_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//hide_pwd.png"
+        file="IMAGES_SUBMISSION\\hide_pwd.png"
     )  # INITIALISING IMAGE
     show_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//show_pwd.png"
+        file="IMAGES_SUBMISSION\\show_pwd.png"
     )  # INITIALISING IMAGE
 
     # DEFINING SIGNIN AND LOGIN FUNCTIONS AND CHANGE PASSWORD FUNCTION #
@@ -647,11 +647,11 @@ def new_window(text):
         "Logged Into To Do List!!"
     )  # SETTING THE TITLE OF THE WINDOW TO THE NAME OF THE APPLICATION
     n_win.iconbitmap(
-        "IMAGES_SUBMISSION//icon.ico"
+        "IMAGES_SUBMISSION\\icon.ico"
     )  # SETTING ICON OF THE APP WINDOW
 
     n_win_bg_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//scenery2.png"
+        file="IMAGES_SUBMISSION\\scenery2.png"
     )  # BACKGROUND IMAGE FOR THE NEW WINDOW
     # LABEL THAT CONTAINS THE BACKGROUND IMAGE AND THE WELCOME MESSAGE
     n_win_bg_img_label = tk.Label(
@@ -1766,31 +1766,31 @@ def new_window(text):
 
     # SETTING UP ADD TASK, EDIT TASK, DELETE TASK, VIEW TASKS WIDGETS, BUTTONS, IMAGES, LABELS, ETC.
     add_task_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//add_task.png"
+        file="IMAGES_SUBMISSION\\add_task.png"
     )
     add_task_btn = tk.Button(n_win, image=add_task_img, command=add_task)
     add_task_label = tk.Label(n_win, text="ADD TASK")
 
     edit_task_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//edit_task.png"
+        file="IMAGES_SUBMISSION\\edit_task.png"
     )
     edit_task_btn = tk.Button(n_win, image=edit_task_img, command=edit_task)
     edit_task_label = tk.Label(n_win, text="EDIT TASK")
 
     delete_task_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//delete_task.png"
+        file="IMAGES_SUBMISSION\\delete_task.png"
     )
     delete_task_btn = tk.Button(n_win, image=delete_task_img, command=delete_task)
     delete_task_label = tk.Label(n_win, text="DELETE TASK")
 
     view_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//view_task.png"
+        file="IMAGES_SUBMISSION\\view_task.png"
     )
     view_task_btn = tk.Button(n_win, image=view_img, command=view_task)
     view_task_label = tk.Label(n_win, text="VIEW TASKS")
 
     back_img = tk.PhotoImage(
-        file="IMAGES_SUBMISSION//back.png"
+        file="IMAGES_SUBMISSION\\back.png"
     )
     back_btn = tk.Button(n_win, image=back_img, command=n_win.destroy)
 
