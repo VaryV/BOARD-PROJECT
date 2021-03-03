@@ -1,4 +1,4 @@
 CREATE DATABASE todolist;
 USE todolist;
 CREATE TABLE userpwd(SNO int PRIMARY KEY auto_increment, USERNAME varchar(20), PASSWORD varchar(12), MAIL varchar(40));
-CREATE TABLE usertasks(SN0 int PRIMARY KEY auto_increment, USERNAME varchar(20), REMINDER_DATE date, REMINDER_TIME time, REMINDER_NAME varchar(30), REM_DESCRIPTION varchar(150), rem_option char(1), rem_frequency varchar(7), reminded varchar(3) DEFAULT 'NO');
+CREATE TABLE usertasks(SNO int PRIMARY KEY auto_increment, USERNAME varchar(20), REMINDER_DATE date, REMINDER_TIME time, REMINDER_NAME varchar(30), REM_DESCRIPTION varchar(150), rem_option char(1), rem_frequency varchar(7), reminded varchar(3) DEFAULT 'NO');
